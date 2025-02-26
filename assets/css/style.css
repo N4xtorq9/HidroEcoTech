@@ -1,0 +1,1672 @@
+/*
+
+Softy Pinko
+
+https://templatemo.com/tm-535-softy-pinko
+
+*/
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. welcome
+06. features
+07. team
+08. pricing
+09. blog
+10. contact
+11. footer
+12. preloader
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+
+/* Fondo de toda la página */
+html,
+body {
+  background: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.section.colored {
+  background: #f2f2fe;
+}
+/*Línea separadora de secciones*/
+.hr {
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  border-bottom: 1px solid #cacaca;
+}
+/*Fin línea separadora de secciones*/
+
+
+/*Centrado titulo hidroelectrica*/
+.center-heading {
+  text-align: center;
+}
+/*Fin Centrado titulo hidroelectrica*/
+
+
+.center-text.colored {
+  color: #fff;
+}
+/*Texto P*/
+.center-text p {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.left-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.left-text.light {
+  color: #fff;
+}
+
+.left-text p {
+  margin-bottom: 30px;
+}
+
+
+.padding-bottom-top-60 {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.padding-bottom-80 {
+  padding-bottom: 80px !important;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee !important;
+}
+
+.mbottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.align-self-bottom {
+  -ms-flex-item-align: flex-end !important;
+  align-self: flex-end !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important;
+}
+
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+.padding-top-80 {
+  padding-top: 80px !important;
+}
+
+.padding-top-70 {
+  padding-top: 70px !important;
+}
+
+.padding-top-20 {
+  padding-top: 20px !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+.margin-bottom-45 {
+  margin-bottom: 45px !important;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px !important;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px !important;
+}
+
+
+
+
+/*Botones Hidroelectricas*/
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #35830f;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+a.main-button:hover {
+  background-color: #000000;
+}
+
+
+/*Boton enviar mensaje*/
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #35830f;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+button.main-button:hover {
+  background-color: #000000;
+}
+
+
+/* 
+---------------------------------------------
+header
+--------------------------------------------- 
+*/
+.header-area {
+  position: fixed;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  height: 100px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/*Barra de menu y Logo*/
+.header-area .main-nav {
+  box-shadow: 0px 5px 20px #000000;
+  border-radius: 50px;
+  min-height: 80px;
+  background: #ffffff;
+}
+
+.header-area .main-nav .logo {
+margin-top: 27px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.header-area .main-nav .logo img {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header-area .main-nav .nav {
+  float: right;
+  margin-top: 27px;
+  margin-left: 0px;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
+}
+
+.header-area .main-nav .nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-area .main-nav .nav li:last-child {
+  padding-right: 0px;
+}
+
+.header-area .main-nav .nav li a {
+  display: block;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
+}
+
+.header-area .main-nav .nav li a:hover {
+  color: #35830f;
+  font-weight: bold;
+}
+
+.header-area .main-nav .menu-trigger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 23px;
+  width: 32px;
+  height: 40px;
+  text-indent: -9999em;
+  z-index: 99;
+  right: 40px;
+  display: none;
+}
+
+/*Barra de menu líneas*/
+.header-area .main-nav .menu-trigger span,
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+}
+
+/*Barra de menu líneas*/
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  width: 75%;
+}
+
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  content: "";
+}
+
+.header-area .main-nav .menu-trigger span {
+  top: 16px;
+}
+
+.header-area .main-nav .menu-trigger span:before {
+  -moz-transform-origin: 33% 100%;
+  -ms-transform-origin: 33% 100%;
+  -webkit-transform-origin: 33% 100%;
+  transform-origin: 33% 100%;
+  top: -10px;
+  z-index: 10;
+}
+
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transform-origin: 33% 0;
+  -ms-transform-origin: 33% 0;
+  -webkit-transform-origin: 33% 0;
+  transform-origin: 33% 0;
+  top: 10px;
+}
+
+.header-area .main-nav .menu-trigger.active span,
+.header-area .main-nav .menu-trigger.active span:before,
+.header-area .main-nav .menu-trigger.active span:after {
+  background-color: transparent;
+  width: 100%;
+}
+/*Barra de menu líneas X*/
+.header-area .main-nav .menu-trigger.active span:before {
+  -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
+  -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
+  -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
+  transform: translateY(6px) translateX(1px) rotate(45deg);
+  background-color: #000000;
+}
+/*Barra de menu líneas X*/
+.header-area .main-nav .menu-trigger.active span:after {
+  -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  background-color: #000000;
+}
+
+.header-area.header-sticky {
+  min-height: 80px;
+}
+
+.header-area.header-sticky .logo {
+  margin-top: 25px;
+}
+
+.header-area.header-sticky .nav {
+  margin-top: 20px !important;
+}
+
+.header-area.header-sticky .nav li a {
+  color: #000000;
+}
+
+.header-area.header-sticky .nav li a.active {
+  color: #35830f;
+}
+
+@media (max-width: 1200px) {
+  .header-area .main-nav .nav li {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .header-area .main-nav:before {
+    display: none;
+  }
+}
+/*Menu*/
+@media (max-width: 991px) {
+  .header-area {
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-area .container {
+    padding: 0px;
+  }
+  .header-area .logo {
+    margin-top: 27px !important;
+    margin-left: 30px;
+  }
+  .header-area .menu-trigger {
+    display: block !important;
+  }
+  .header-area .main-nav {
+    overflow: hidden;
+  }
+  .header-area .main-nav .nav {
+    float: none;
+    width: 100%;
+    margin-top: 80px !important;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+  
+  /*Líneas del menu para dividir*/
+  .header-area .main-nav .nav li {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  /*Texto del menu*/
+  .header-area .main-nav .nav li a {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #fff !important;
+    color: #000000 !important;
+  }
+  /*Selector del menu*/
+  .header-area .main-nav .nav li a:hover {
+    background: #ffffff !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-area .main-nav .nav {
+    display: flex !important;
+  }
+}
+
+
+
+
+  /*Texto del banner*/
+  .welcome-area .header-text p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+
+
+/* 
+---------------------------------------------
+parallax & home seperator
+--------------------------------------------- 
+*/
+
+.counter {
+  overflow: hidden;
+  position: relative;
+}
+
+/*Banner pequeño*/
+.counter:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  opacity: .90;
+  background-image: url(../images/banner-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+  top: -20%;
+  left: -20%;
+}
+
+
+
+.counter .content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.counter .content .count-item {
+  height: 340px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.counter .content .count-item.decoration-bottom {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-bottom:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 160px;
+  left: 70%;
+  background: url(../images/circle-dec.png) center center no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item.decoration-top {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-top:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 140px;
+  left: 70%;
+  background: url(../images/circle-dec.png) center center no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item:hover strong {
+  margin-top: 110px;
+}
+/*Números del Banner pequeño*/
+.counter .content .count-item strong {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  margin-top: 120px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+/*Texto del Banner pequeño*/
+.counter .content .count-item span {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+}
+
+@media (max-width: 991px) {
+  .parallax {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+  .parallax .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .counter .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter .content .count-item {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .counter .content .count-item:hover strong {
+    margin-top: 0px;
+  }
+  .counter .content .count-item:before {
+    display: none;
+  }
+  .counter .content .count-item:after {
+    display: none;
+  }
+  .counter .content .count-item strong {
+    margin-top: 0px;
+  }
+}
+
+/* 
+---------------------------------------------
+Energía Eolica
+--------------------------------------------- 
+*/
+/*Titulo cajas*/
+.team-item {
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 #000000;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.team-item:hover .team-content .team-info {
+  margin-left: 30px;
+}
+
+
+/*Texto de las cajas Nosotros*/
+.team-item .team-content p {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* 
+---------------------------------------------
+Hidroelectricas
+--------------------------------------------- 
+*/
+/*Incio CSS hidroelectricas*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que la ventana esté sobre todos los elementos */
+  
+}
+.popup {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1001; /* Asegura que la ventana emergente esté al frente */
+
+}
+.popup img {
+  max-width: 600px;
+  max-height: 500px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-button, .close-button {
+  padding: 5px 10px;
+  background: #35830f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.close-button {
+  background: #000000;
+}
+/*Bloque boton Estadisticas*/
+.bloque-boton {
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+.bloque-boton .pricing-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+/*Fin CSS hidroelectricas*/
+
+/*Cajas y sombras Energía Solar*/
+.pricing-item {
+  background: #FFFFFF;
+  box-shadow: 0 2px 25px 0 #000000;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 30px 0px 40px 0px;
+}
+
+.pricing-item.active .pricing-header {
+  position: relative;
+}
+
+
+
+.pricing-item .pricing-body {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+/*Color de subcaja*/
+.pricing-item .pricing-body .price-wrapper {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  background: #000000;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+.pricing-item .pricing-body .price-wrapper-2 {
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  width: 96%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+/*Signo $ de caja*/
+.pricing-item .pricing-body .price-wrapper .currency {
+  height: 47px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  position: relative;
+  top: -1px;
+}
+/*Números de caja*/
+.pricing-item .pricing-body .price-wrapper .price {
+  font-weight: 500;
+  font-size: 28px;
+  color: #ffffff;
+}
+/*Subtitulo de caja*/
+.pricing-item .pricing-body .price-wrapper .period {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  letter-spacing: 0.88px;
+}
+/*Texto tachado de caja*/
+.pricing-item .pricing-body .list li {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0.25px;
+  text-decoration: line-through;
+}
+/*Texto de caja*/
+.pricing-item .pricing-body .list li.active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pricing-item .pricing-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+.pricing-item .pricing-header .pricing-title-2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+}
+ 
+
+
+
+/* 
+---------------------------------------------
+contacto
+--------------------------------------------- 
+*/
+
+#contact-us {
+  padding: 160px 0px;
+}
+
+#contact-us h5 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+}
+
+.contact-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+}
+
+.contact-text p {
+  margin-bottom: 28px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: #777;
+  font-size: 14px;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 30px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+  padding: 20px;
+}
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+footer {
+  background-image: linear-gradient(127deg, #979797 0%, #b6b6b6 91%);
+  padding-top: 30px;
+}
+
+footer .social {
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer .social li {
+  margin: 0px 10px;
+  display: inline-block;
+}
+
+footer .social li a {
+  color: #000000;
+   text-align: center;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+footer .social li a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer .copyright {
+  text-align: center;
+  border-top: 1px solid rgba(250,250,250,0.2);
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  footer .text {
+    margin-bottom: 30px;
+  }
+  footer h5 {
+    margin-bottom: 15px;
+  }
+  footer .footer-nav {
+    margin-bottom: 30px;
+  }
+}
+
+/* 
+---------------------------------------------
+CUANDO INICIA LA PÁGINA
+--------------------------------------------- 
+*/
+#preloader {
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #d8d8d8 0%, #d1d1d1 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+---------------------------------------------
+FIN CUANDO INICIA LA PÁGINA
+--------------------------------------------- 
+*/
+
+/* Estilos para el contenedor de las estrellas */
+.star-rating {
+  gap: 5px; /* Espacio entre las estrellas */
+  margin-top: 10px; /* Margen superior para separar del contenido anterior */
+ 
+}
+
+/* Estilos para las estrellas */
+.star-rating .bi-star-fill {
+  font-size: 1.2rem; /* Tamaño de las estrellas */
+  color: #ffc107; /* Color amarillo para las estrellas */
+  
+}
+.user-image-container:hover  {
+  margin-left: 30px;
+}
+
+/*--------------------------------------------------------------
+ENERGÍA SOLAR
+--------------------------------------------------------------*/
+/*Texto como se produce*/
+.features .nav-item {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.features .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.features .nav-link {
+  color: var(--heading-color);
+  border: 0;
+  padding: 30px;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.features .nav-link i {
+  background: #f2f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  transition: 0.3s;
+}
+
+.features .nav-link p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.features .nav-link.active {
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+  color: var(--default-color);
+}
+
+.features .tab-pane img {
+  border-radius: 15px;
+}
+
+.features-details .features-item+.features-item {
+  margin-top: 60px;
+}
+
+.features-details .features-item .content {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/*Titulos de Energia solar*/
+.features-details .features-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+
+.features-details .features-item .more-btn {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 6px 30px;
+  border-radius: 6px;
+}
+
+.features-details .features-item .more-btn:hover {
+  background-color: color-mix(in rgba, var(--accent-color), transparent 20%);
+}
+
+.features-details .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-details .features-item ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features-details .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.features-details .features-item ul i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+.features-details .features-item img {
+  border-radius: 20px;
+}
+/*--------------------------------------------------------------
+# Banner inicio
+--------------------------------------------------------------*/
+.hero {
+  position: relative;
+  padding-top: 160px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--accent-color), transparent 92%), transparent 40%);
+  pointer-events: none;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+/*Titulo Colombia*/
+.hero .hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+/*Texto del banner*/
+.hero .hero-content p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+  .hero .hero-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero .hero-content .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+
+.hero .company-badge i {
+  font-size: 1.25rem;
+}
+
+.hero .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 20%);
+  border-color: color-mix(in srgb, var(--accent-color), black 20%);
+}
+
+.hero .btn-link {
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-link:hover {
+  color: var(--accent-color);
+}
+
+.hero .btn-link i {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.hero .hero-image {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero .customers-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  background-color: var(--surface-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  animation: float-badge 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero .customers-badge .customer-avatars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.hero .customers-badge .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--surface-color);
+  margin-left: -8px;
+}
+
+.hero .customers-badge .avatar:first-child {
+  margin-left: 0;
+}
+
+.hero .customers-badge .avatar.more {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.hero .customers-badge p {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+@media (max-width: 992px) {
+  .hero .customers-badge {
+    position: static;
+    margin: 1rem auto;
+    max-width: 250px;
+  }
+}
+
+.hero .stats-row {
+  position: relative;
+  z-index: 1;
+  margin-top: 5rem;
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding-bottom: 2rem;
+}
+
+.hero .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.hero .stat-item .stat-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.hero .stat-item .stat-icon i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.hero .stat-item:hover .stat-icon {
+  background-color: var(--accent-color);
+}
+
+.hero .stat-item:hover .stat-icon i {
+  color: var(--contrast-color);
+}
+
+.hero .stat-item .stat-content {
+  flex-grow: 1;
+}
+
+.hero .stat-item .stat-content h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.hero .stat-item .stat-content p {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .hero .stat-item {
+    padding: 1.5rem;
+  }
+}
+
+@keyframes float-badge {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+  padding: 80px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.call-to-action:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.call-to-action p {
+  color: white;
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--default-color);
+  color: var(--default-color);
+}
+
+.call-to-action .cta-btn:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+
+/*Botones ventana Energía eolica*/
+#ventanaEmergente {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px;
+  z-index: 1000;
+}
+
+#imagenActual {
+  max-width: 600px;
+  max-height: 500px;
+}
+
+.botones {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.botones button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.botones button:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.button { /* Estilos para el contenedor del botón */
+  text-align: center; /* Centra el botón horizontalmente dentro del contenedor */
+}
+
+#abrirVentana {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.button button:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+
+
+
+/*Botones ventana Energia solar*/
+#ventanaEmergenteEst {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+#imagenActualEst {
+  max-width: 800px;
+  max-height: 700px;
+}
+
+.botonesEst {
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+.botonesEst button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+.botonesEst button:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  
+}
+
+.buttonEst { /* Estilos para el contenedor del botón */
+  text-align: center; /* Centra el botón horizontalmente dentro del contenedor */
+}
+
+#abrirVentanaEst {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.buttonEst button:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}

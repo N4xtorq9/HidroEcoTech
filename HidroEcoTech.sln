@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiFormularioAPI", "MiFormularioAPI\MiFormularioAPI.csproj", "{CF262FEC-6995-65DD-2A11-49DB3C87F7BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF262FEC-6995-65DD-2A11-49DB3C87F7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF262FEC-6995-65DD-2A11-49DB3C87F7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF262FEC-6995-65DD-2A11-49DB3C87F7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF262FEC-6995-65DD-2A11-49DB3C87F7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96F41389-E7E5-446F-96D7-4D478DF4CFD8}
+	EndGlobalSection
+EndGlobal
