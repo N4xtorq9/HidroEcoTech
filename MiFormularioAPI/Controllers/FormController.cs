@@ -8,12 +8,12 @@ namespace TuProyecto.Controllers
     [ApiController]
     public class FormController : ControllerBase
     {
-        private readonly string excelPath = @"D:\2025\HidroEcoTech\HidroEcoTech\contactos.xlsx";
+        private const string excelFile = "contactos.xlsx";
 
         [HttpPost("submit")]
         public IActionResult SubmitForm([FromBody] FormData data)
         {
-            if (data == null || string.IsNullOrWhiteSpace(data.Name) || double.IsNullOrWhiteSpace(data.Cel) ||
+            if (data == null || string.IsNullOrWhiteSpace(data.Name) || data.Cel == 0 ||
                 string.IsNullOrWhiteSpace(data.Email) || string.IsNullOrWhiteSpace(data.Message))
             {
                 return BadRequest(new { message = "Todos los campos son requeridos" });
@@ -30,9 +30,12 @@ namespace TuProyecto.Controllers
             }
         }
 
-        private void SaveToExcel(string name, double Cel, string email, string message )
+        private void SaveToExcel(string name, long Cel, string email, string message )
         {
-            FileInfo file = new FileInfo(excelPath);
+            var currentDirectory = Directory.GetCurrentDirectory();
+            var parentDirectory = Directory.GetParent(currentDirectory);
+            var excelPath = $"{parentDirectory}\\{excelFile}";
+            var file = new FileInfo(excelPath);
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
             using (ExcelPackage package = file.Exists ? new ExcelPackage(file) : new ExcelPackage())
@@ -64,7 +67,7 @@ namespace TuProyecto.Controllers
     public class FormData
     {
         public string Name { get; set; }
-        public double Cel { get; set; }
+        public long Cel { get; set; }
         public string Email { get; set; }
         public string Message { get; set; }
     }
